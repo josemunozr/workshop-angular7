@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+  <img src="{{data.image}}" class="card-img-top" alt="{{data.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{data.name}}</h5>
+    <p class="card-text">Episodios: {{data.episode.length}}</p>
+    <p class="card-text">Genero: {{data.gender}}</p>
+    <p class="card-text">Especie: {{data.species}}</p>
+  </div>
+  <div class="container">
+    <div class="form-group">
+      <label for="comentary">Comentario</label>
+      <input type="text" class="form-control" [(ngModel)]="comentary">
+      <button (click)="handleAddCommnet()" type="button" class="btn btn-primary m-1">Agregar</button>
+    </div>
+  </div>
+</div>
